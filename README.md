@@ -8,8 +8,6 @@
 - **Deployment**: Gerencia a implantação de réplicas dos Pods.
 - **Service**: Abstração para expor um conjunto de Pods (IP estático e balanceamento de carga).
 
----
-
 ## ⚙️ Comandos Essenciais `kubectl`
 
 ### 📂 Gerenciamento de Recursos
@@ -41,8 +39,6 @@ kubectl exec -it <pod_name> -- /bin/bash  # Acessar o shell de um container
 kubectl port-forward pod/<pod_name> 8080:80  # Encaminhar porta do Pod para localhost
 kubectl top pod            # Monitorar uso de recursos (CPU/Memória)
 ```
-
----
 
 ## 📝 YAML Básico de Configuração
 
@@ -88,8 +84,6 @@ spec:
       targetPort: 80
   type: LoadBalancer
 ```
-
---- 
 
 ## 🔒 Configurações Avançadas
 
@@ -138,8 +132,6 @@ spec:
               number: 80
 ```
 
----
-
 ## 📊 Escalabilidade
 
 ### Horizontal Pod Autoscaler (HPA):
@@ -154,8 +146,6 @@ kubectl autoscale deployment my-app --cpu-percent=50 --min=1 --max=10
 kubectl top pods
 kubectl top nodes
 ```
-
----
 
 ## 🔧 Troubleshooting
 
@@ -178,12 +168,13 @@ kubectl cluster-info
 kubectl get componentstatuses
 ```
 
----
 
 ## 🌐 Referências
 [Kubernetes Documentation](https://kubernetes.io/)
 
-
+## 🔎Onde me encontrar
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-000?style=for-the-badge&logo=linkedin&logoColor=0E76A8)](https://www.linkedin.com/in/jalisson-xavier/)
+[![Github](https://img.shields.io/badge/Github-000?style=for-the-badge&logo=github)](https://github.com/jalisson-xavier)
 
 
 
