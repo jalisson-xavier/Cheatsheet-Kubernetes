@@ -42,9 +42,12 @@ kubectl port-forward pod/<pod_name> 8080:80  # Encaminhar porta do Pod para loca
 kubectl top pod            # Monitorar uso de recursos (CPU/Memória)
 ```
 
+---
+
 ## 📝 YAML Básico de Configuração
 
 ### Deployment
+
 ```
 apiVersion: apps/v1
 kind: Deployment
@@ -68,6 +71,7 @@ spec:
         ports:
         - containerPort: 80
 ```
+
 ### Service
 
 ```
@@ -84,6 +88,8 @@ spec:
       targetPort: 80
   type: LoadBalancer
 ```
+
+--- 
 
 ## 🔒 Configurações Avançadas
 
@@ -131,6 +137,9 @@ spec:
             port:
               number: 80
 ```
+
+---
+
 ## 📊 Escalabilidade
 
 ### Horizontal Pod Autoscaler (HPA):
@@ -145,6 +154,8 @@ kubectl autoscale deployment my-app --cpu-percent=50 --min=1 --max=10
 kubectl top pods
 kubectl top nodes
 ```
+
+---
 
 ## 🔧 Troubleshooting
 
@@ -166,6 +177,8 @@ kubectl rollout restart deployment <deployment_name>
 kubectl cluster-info
 kubectl get componentstatuses
 ```
+
+---
 
 ## 🌐 Referências
 [Kubernetes Documentation](https://kubernetes.io/)
