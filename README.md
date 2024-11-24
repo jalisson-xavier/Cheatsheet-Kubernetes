@@ -1,6 +1,6 @@
 # Cheatsheet-Kubernetes
 
-## 📘 Conceitos Básicos
+## 📒Conceitos Básicos
 - **Cluster**: Conjunto de máquinas (nós) que executam containers gerenciados pelo Kubernetes.
 - **Node**: Máquina (física ou virtual) no cluster. Pode ser **Master** (control plane) ou **Worker**.
 - **Pod**: A menor unidade do Kubernetes, encapsula containers e compartilha recursos como storage e rede.
@@ -8,9 +8,9 @@
 - **Deployment**: Gerencia a implantação de réplicas dos Pods.
 - **Service**: Abstração para expor um conjunto de Pods (IP estático e balanceamento de carga).
 
-## ⚙️ Comandos Essenciais `kubectl`
+## ⚙️Comandos Essenciais `kubectl`
 
-### 📂 Gerenciamento de Recursos
+### 📂Gerenciamento de Recursos
 
 ```
 kubectl get pods           # Listar Pods
@@ -22,7 +22,7 @@ kubectl logs <pod_name>    # Logs do Pod
 kubectl delete pod <pod_name>  # Deletar um Pod
 ```
 
-### 🚀 Criar e Atualizar Recursos
+### 🚀Criar e Atualizar Recursos
 
 ```
 kubectl apply -f <file.yaml>   # Aplicar configuração YAML
@@ -31,7 +31,7 @@ kubectl scale deployment <name> --replicas=<n>   # Escalar Pods
 kubectl set image deployment/<name> <container_name>=<new_image>  # Atualizar imagem
 ```
 
-### 🔍 Depuração
+### 🔍Depuração
 
 ```
 kubectl get events         # Ver eventos do cluster
@@ -40,7 +40,7 @@ kubectl port-forward pod/<pod_name> 8080:80  # Encaminhar porta do Pod para loca
 kubectl top pod            # Monitorar uso de recursos (CPU/Memória)
 ```
 
-## 📝 YAML Básico de Configuração
+## 📝YAML Básico de Configuração
 
 ### Deployment
 
@@ -85,7 +85,7 @@ spec:
   type: LoadBalancer
 ```
 
-## 🔒 Configurações Avançadas
+## 🔒Configurações Avançadas
 
 ### ConfigMap
 
@@ -132,7 +132,7 @@ spec:
               number: 80
 ```
 
-## 📊 Escalabilidade
+## 📊Escalabilidade
 
 ### Horizontal Pod Autoscaler (HPA):
 
@@ -147,7 +147,7 @@ kubectl top pods
 kubectl top nodes
 ```
 
-## 🔧 Troubleshooting
+## 🔧Troubleshooting
 
 ### Eventos do Cluster:
 
@@ -169,7 +169,7 @@ kubectl get componentstatuses
 ```
 
 
-## 🌐 Referências
+## 🌐Referências
 [Kubernetes Documentation](https://kubernetes.io/)
 
 ## 🔎Onde me encontrar
