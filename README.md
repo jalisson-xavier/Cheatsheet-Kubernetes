@@ -13,13 +13,14 @@
 ### 📂Gerenciamento de Recursos
 
 ```
-kubectl get pods           # Listar Pods
-kubectl get svc            # Listar Services
-kubectl get deployments    # Listar Deployments
-kubectl get nodes          # Listar Nodes
+kubectl get pods	# Listar Pods
+kubectl get svc	# Listar Services
+kubectl get deployments	# Listar Deployments
+kubectl get nodes	# Listar Nodes
 kubectl describe pod <pod_name>  # Detalhes de um Pod
 kubectl logs <pod_name>    # Logs do Pod
 kubectl delete pod <pod_name>  # Deletar um Pod
+kubectl get pv # Listar Persisten Volumes
 ```
 
 ### 🚀Criar e Atualizar Recursos
@@ -29,6 +30,12 @@ kubectl apply -f <file.yaml>   # Aplicar configuração YAML
 kubectl create deployment <name> --image=<image>  # Criar Deployment
 kubectl scale deployment <name> --replicas=<n>   # Escalar Pods
 kubectl set image deployment/<name> <container_name>=<new_image>  # Atualizar imagem
+```
+
+### 🚀Acessando Recursos
+
+```
+kubectl exec --tty --stdin <pod> -- /bin/bash # Acessa o pod e libera o terminal 
 ```
 
 ### 🔍Depuração
@@ -166,6 +173,7 @@ kubectl rollout restart deployment <deployment_name>
 ```
 kubectl cluster-info
 kubectl get componentstatuses
+kubectl describe pod <nome do pode> # Descreve informações sobre o pod 
 ```
 
 
