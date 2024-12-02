@@ -18,6 +18,7 @@ kubectl get svc	# Listar Services
 kubectl get deployments	# Listar Deployments
 kubectl get nodes	# Listar Nodes
 kubectl describe pod <pod_name>  # Detalhes de um Pod
+kubectl explain # Explicar Pod
 kubectl logs <pod_name>    # Logs do Pod
 kubectl delete pod <pod_name>  # Deletar um Pod
 kubectl get pv # Listar Persisten Volumes
